@@ -526,7 +526,7 @@ public class Hessian2Output extends AbstractHessianOutput implements Hessian2Con
                 buffer[offset++] = (byte) (length >> 8);
                 buffer[offset++] = (byte) length;
             }
-            this._offset=offset;
+//            this._offset=offset;
             if (!value.startsWith("2.")) {
                 this._offset = offset;
                 this.printString(value, strOffset, length);
